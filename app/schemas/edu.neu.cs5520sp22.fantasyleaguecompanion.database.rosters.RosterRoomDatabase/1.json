@@ -1,0 +1,137 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "4f38033def2e67fc0be9a1b5de6a881d",
+    "entities": [
+      {
+        "tableName": "rosters",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`starters` TEXT, `taxi` TEXT, `reserve` TEXT, `players` TEXT, `bench` TEXT, `wins` INTEGER NOT NULL, `waiver_position` INTEGER NOT NULL, `total_moves` INTEGER NOT NULL, `ties` INTEGER NOT NULL, `ppts` REAL NOT NULL, `losses` INTEGER NOT NULL, `fpts` REAL NOT NULL, `fpts_against` REAL NOT NULL, `waiver_budget_used` INTEGER NOT NULL, `division` INTEGER NOT NULL, `roster_id` INTEGER NOT NULL, `owner_id` TEXT, `league_id` TEXT NOT NULL, PRIMARY KEY(`league_id`, `roster_id`))",
+        "fields": [
+          {
+            "fieldPath": "starters",
+            "columnName": "starters",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "taxi",
+            "columnName": "taxi",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "reserve",
+            "columnName": "reserve",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "players",
+            "columnName": "players",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bench",
+            "columnName": "bench",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wins",
+            "columnName": "wins",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "waiver_position",
+            "columnName": "waiver_position",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "total_moves",
+            "columnName": "total_moves",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ties",
+            "columnName": "ties",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ppts",
+            "columnName": "ppts",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "losses",
+            "columnName": "losses",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fpts",
+            "columnName": "fpts",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fpts_against",
+            "columnName": "fpts_against",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "waiver_budget_used",
+            "columnName": "waiver_budget_used",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "division",
+            "columnName": "division",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roster_id",
+            "columnName": "roster_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "owner_id",
+            "columnName": "owner_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "league_id",
+            "columnName": "league_id",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "league_id",
+            "roster_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4f38033def2e67fc0be9a1b5de6a881d')"
+    ]
+  }
+}

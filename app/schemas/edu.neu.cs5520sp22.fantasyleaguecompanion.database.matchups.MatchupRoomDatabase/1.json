@@ -1,0 +1,72 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "7a2b9dc8ef995a6087fb5defd78201ab",
+    "entities": [
+      {
+        "tableName": "matchups",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`leagueId` TEXT NOT NULL, `week` INTEGER NOT NULL, `roster_id` INTEGER NOT NULL, `points` REAL NOT NULL, `matchup_id` INTEGER NOT NULL, `starters` TEXT, `player_points` TEXT, PRIMARY KEY(`leagueId`, `week`, `roster_id`))",
+        "fields": [
+          {
+            "fieldPath": "leagueId",
+            "columnName": "leagueId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "week",
+            "columnName": "week",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roster_id",
+            "columnName": "roster_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "points",
+            "columnName": "points",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "matchup_id",
+            "columnName": "matchup_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "starters",
+            "columnName": "starters",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "player_points",
+            "columnName": "player_points",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "leagueId",
+            "week",
+            "roster_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7a2b9dc8ef995a6087fb5defd78201ab')"
+    ]
+  }
+}

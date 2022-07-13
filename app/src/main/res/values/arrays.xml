@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reload_values">
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+        <item>72</item>
+        <item>168</item>
+    </string-array>
+    <string-array name="reload_names">
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>7 days</item>
+    </string-array>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fantasy League Companion</string>
+    <string name="matchups">Matchups</string>
+    <string name="transactions">Transactions</string>
+    <string name="rosters">Rosters</string>
+    <string name="history">History</string>
+    <string name="draft">Draft</string>
+    <string name="standings">Standings</string>
+    <string name="settings">Settings</string>
+    <string name="standings_name">Name</string>
+    <string name="standings_w">W</string>
+    <string name="standings_l">L</string>
+    <string name="standings_t">T</string>
+    <string name="standings_maxpf">MaxPF</string>
+    <string name="standings_pf">PF</string>
+    <string name="standings_pa">PA</string>
+    <string name="login">Log In</string>
+    <string name="login_message">Log In to Start</string>
+    <string name="enter_username_string">Enter Username</string>
+    <string name="VS">VS</string>
+    <string name="TeamName1">TeamName1</string>
+    <string name="TeamName2">TeamName2</string>
+    <string name="_0_0">0.0</string>
+    <string name="log_out">Logout</string>
+</resources>

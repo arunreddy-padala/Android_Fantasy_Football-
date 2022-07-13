@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="User"
+        app:key="user">
+        <EditTextPreference
+            app:key="username"
+            app:title="User Name"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Player Database"
+        app:key="player_database">
+        <Preference
+            app:key="reload_players"
+            app:title="Reload Players" />
+        <Preference
+            app:title="Last Reload"
+            app:key="last_reload" />
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/reload_names"
+            android:entryValues="@array/reload_values"
+            android:key="reload_players_interval"
+            android:title="Player Database reload interval"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
