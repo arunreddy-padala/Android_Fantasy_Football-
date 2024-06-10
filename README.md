@@ -1,4 +1,4 @@
-# Fantasy_League_Companion_Java_Android
+# Fantasy_Football_League_Companion_Java_Android
 
 This project is an Android-based fantasy football league companion application designed to manage and display various aspects of fantasy leagues, including drafts, matchups, and standings. Utilizing the Android SDK, Android Jetpack components, and external APIs like Sleeper and ESPN, the app integrates live data fetching and robust local data management with Room local DB for a comprehensive user experience. Key features include real-time updates on league standings, detailed player stats, and interactive draft sessions, all within a user-friendly mobile interface.
 
